@@ -18,6 +18,8 @@ import {
   Zap,
 } from "lucide-react";
 import clsx from "clsx";
+import { User } from "@clerk/nextjs/server";
+import { UserButton } from "@clerk/nextjs";
 
 function MenuOptions() {
   const pathName = usePathname();
@@ -113,6 +115,7 @@ function MenuOptions() {
           </Tooltip>
         </TooltipProvider>
         <Separator />
+        <UserButton/>
       </div>
     </nav>
   );

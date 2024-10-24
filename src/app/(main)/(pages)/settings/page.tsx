@@ -1,5 +1,6 @@
 import ProfileForm from "@/components/Forms/profile-form";
 import React from "react";
+import ProfilePicture from "./_components/profile-picture";
 
 function Settings() {
   return (
@@ -13,7 +14,12 @@ function Settings() {
           <p className=" text-base text-white/50">
             Add or update your information
           </p>
+
         </div>
+        <ProfilePicture>
+          
+        </ProfilePicture>
+
         <ProfileForm/>
       </div>
     </div>
